@@ -1,0 +1,57 @@
+*{/*If the browsers font size is set to 16px (the norm) 1rem=10px. If the browsers font sizes are higher, the user will get larger fonts*/
+    font-size: 62.5%;
+}
+html, body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+/*text sizes*/
+.xs{font-size: 1rem;}
+.sm{font-size: 1.6rem;}
+.N{font-size: 2rem;}
+.NM{font-size: 3rem;}
+.M{font-size: 4rem;}
+.ML{font-size: 5rem;}
+.L{font-size: 6rem}
+.XL{font-size: 8rem;}
+.XXL{font-size: 10rem;}
+
+/*font weights*/
+.font-weight-reset{font-weight: 400!important}
+
+.thin{font-weight: 100;}
+.extra-light{font-weight: 200;}
+.light{font-weight: 300;}
+.regular{font-size: 400;}
+.medium{font-weight: 500;}
+.semi-bold{font-weight: 600;}
+.bold{font-weight: 700;}
+.extra-bold{font-weight: 800;}
+.black{font-weight: 900;}
+
+/*line heights*/
+.lh-1{line-height: 1;}
+.lh-1-25{line-height: 1.25;}
+.lh-1-5{line-height: 1.5;}
+.lh-2{line-height: 2;}
+
+/*Text alterations*/
+.italics{font-style: italic;}
+.underline{text-decoration: underline;}
+.CAPS{text-transform: uppercase;}
+
+/*Text alignments*/
+.text-a-right{text-align: right;}
+.text-a-center{text-align: center;}
+.text-a-justify{text-align: justify;}
+
+/*mischalleneos*/
+strong, em, i, b, a, mark{font-size: inherit;}
+
+/*Elemnt selectors*/
+h3{
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+mark{
+    background-color: rgb(250, 241, 210);
+}

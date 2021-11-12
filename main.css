@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*::selection{background-color: rgba(176,214,253,.8);}
+
+html, body{
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+/*link hover*/
+a{text-decoration: none; color: navy;}
+a:hover{text-decoration: none; color: steelblue;}
+
+/*nav bar start*/
+nav#website-nav{
+    background: whitesmoke;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    transition-duration: 0.4s;
+}
+nav#website-nav:hover{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transition-duration: 0.4s;
+}
+nav#website-nav h2{
+    font-family: 'Staatliches', Impact, 'Arial Black', sans-serif;
+    margin-left: 20px;
+    color: rgb(177, 144, 100);
+}
+nav#website-nav ul{
+    list-style: none;
+    margin-left: -15px;
+}
+nav#website-nav ul li{
+    display: inline;
+    text-align: right;
+    padding: 10px;
+}
+nav#website-nav ul li a{
+    color: dimgray;
+    padding: 30px;
+}
+nav#website-nav ul li a:hover{color: steelblue;}
+/*nav bar end*/
+
+/*header start*/
+header{
+    background-image: url("media/anna-dudkova-asW9idv3HMM-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    max-height: fit-content;
+}
+header h1{
+    padding: 20px;
+}
+header p{color: grey;}
+/*header end*/
+
+/*intro section*/
+section#intro{
+    margin-top: 10px;
+    padding: 30px;
+    background-image: url("media/pawprints.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+section#intro p strong{
+    color: seagreen;
+}
+section#intro p{margin-bottom: 1rem;}
+/*intro end*/
+
+/*main start*/
+main{margin-bottom: 50px;}
+
+/*cane corso*/
+article#cane-corso{margin-bottom: 50px;}
+article#cane-corso figure#cane-corso-portrait{
+    background-image: url("media/cane-corso-potrait.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    float: left;
+    margin-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+article#cane-corso section#cane-corso-text{
+    border-left: solid 1px;
+    padding-left: 20px;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-y: scroll;
+}
+article#cane-corso section#cane-corso-text h2{
+    position: sticky; 
+    top: 0px;
+    color: slategray;
+    background-color: white;
+    border-bottom: 1px solid;
+}
+article#cane-corso section#cane-corso-text h3{
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(10, 10, 102);
+}
+article#cane-corso section#cane-corso-text p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+/*custom scroll bar*/
+article#cane-corso section#cane-corso-text::-webkit-scrollbar {
+    width: 1rem;
+}
+ 
+article#cane-corso section#cane-corso-text::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+ 
+article#cane-corso section#cane-corso-text::-webkit-scrollbar-thumb {
+    background-color: #d08d36;
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
+/*Cane Corso end*/
+
+/*Doberman Start*/
+article#doberman{
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+article#doberman h2{
+    margin-left: -15px;
+    color:darkslategray;
+}
+article#doberman img[alt="A black and a brown doberman on the sidewalk"]{
+    margin-right: 35px;
+    width: 100%;
+    overflow: hidden;
+}
+article#doberman p{
+    padding-right: 35px;
+}
+article#doberman h4{
+    color: olive;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+/*link to hidden videos*/
+article#doberman h4 a{
+    color: darkolivegreen;
+    margin-left: -15px;
+}
+article#doberman h4 a:hover{
+    text-decoration: underline;
+}
+/*Hidden video styling*/
+aside.dog-videos{
+    display: none;
+    background-color: aliceblue;
+}
+aside.dog-videos:target{
+    display: block;
+    background-color: aliceblue;
+}
+aside.dog-videos iframe{
+    padding: 10px 10px 10px 0px;
+    background-color: aliceblue;
+    display: inline;
+    max-width: 100%;
+}
+aside.dog-videos a img{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/*Doberman End*/
+
+/*Rotweiler start*/
+article#rottweiler{
+    margin-bottom: 50px;
+}
+.header-with-background{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: fit-content;
+    padding-top: 80px;
+    padding-bottom: 200px;
+    padding-left: 20px;
+}
+article#rottweiler h2{
+    background-image: url("media/rottweiler-sitting.jpg");
+}
+article .rottweiler-text{
+    padding: 20px 35px 0px 40px;
+}
+article#rottweiler h3{
+    color: rosybrown;
+}
+article#rottweiler #history-rottweiler strong{color: thistle;}
+article#rottweiler #history-rottweiler p{
+    margin-bottom: 1.6rem;
+}
+
+/*link to hidden videos*/
+article#rottweiler h4 a{color: darkorchid;}
+article#rottweiler h4 a:hover{text-decoration: underline;}
+
+/*hidden videos styling (the rest of the was from the dog-videos class above).*/
+article#rottweiler aside#rottweiler-videos{
+    border-left: 30px white solid;
+}
+/*Rotweiler end*/
+
+/*German Shepard start*/
+article#german-shepard{
+    margin-bottom: 40px;
+}
+article#german-shepard h2{
+    background-image: url("media/black-German-Shepard.jpg");
+    background-size: cover;
+}
+article#german-shepard .header-with-background{
+    padding-bottom: 15%;
+}
+article#german-shepard .rottweiler-text strong{
+    color: burlywood;
+}
+article#german-shepard h4 a:hover{text-decoration: underline; color: navy;}
+/*hidden videos styling (the rest of the was from the dog-videos class above).*/
+article#german-shepard aside#gsd-videos{
+    border-left: 30px white solid;
+}
+/*German Shepard end*/
+
+/*Bulmastiff start*/
+article#bulmastiff{
+    width: 100%;
+}
+/*header*/
+article#bulmastiff hgroup{
+    background-image: url("media/Bulsmastiff-standing.jpg");
+    background-size: cover;
+    min-height: 500px;
+    padding-top: 15%;
+    padding-left: 40px;
+}
+article#bulmastiff hgroup p{
+    color: aliceblue; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+article#bulmastiff hgroup p a{color: lightblue;}
+article#bulmastiff hgroup p a:hover{color: lightskyblue;}
+/*header end*/
+article#bulmastiff div#bulmastif-main{
+    margin-top: 40px;
+    padding-left: 40px;
+}
+article#bulmastiff div#bulmastif-main h3{
+    color: darkgoldenrod;
+}
+/*Bullmastiff end. PS: If anyone is reading this, sorry for the mispelling on the article's id*/
+/*main end*/
+hr#main-end{margin-bottom: 20px;}
+
+/*honourable mentions*/
+section#extra-breeds{
+    padding-top: 50px;
+    padding-left: 15%;
+    background-image: linear-gradient(to bottom, #fff9e3, #fff8e2, #fff8e2, #fff7e1, #fff6e1, #fff5e2, #fff3e2, #fff2e3, #fff0e5, #ffefe7, #ffeeea, #ffeded);
+}
+section#extra-breeds h2{color: darkslateblue; padding-left: 10px;}
+section#extra-breeds p{margin-top: 20px; margin-bottom: 20px;}
+section#extra-breeds ul{
+    padding-left: 50px;
+    list-style: square;
+}
+/*Hounourable mentions end*/
+hr#mentions-end{margin-top: 20px; margin-bottom: 20px;}
+
+/*footer*/
+footer{
+    background-color: rgb(36, 36, 93);
+    padding-top: 40px;
+    color: mintcream;
+}
+footer div.row{
+    padding-left: 15%;
+}
+footer address{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+footer address a{
+    color: mintcream;
+}
+footer address a:hover{color: mintcream; text-decoration: undeline;}
+/*Icon div styling*/
+footer section div{
+    position: relative;
+    left: -20px;
+}
+/*Icon styling*/
+footer .fa {
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: wheat;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    transition-duration: 1 seconds!important;
+}
+footer .fa{transition-duration: 1 seconds!important;}
+/*individual icons*/
+footer .fa-twitter:hover, footer .fa-facebook:hover{
+    color: white;
+}
+footer .fa-instagram:hover{
+    color: orange;
+}
+footer .fa-pinterest:hover{color: red;}
+footer .fa-youtube{font-size: 25px;}
+footer .fa-youtube:hover{
+    color: lightcoral;
+    padding-right: 40px;
+
+}
+/*Icon end*/
+footer p#copyright{margin-top: 20px;}
+footer p#by{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+    padding: 2rem;
+    background-color: black;
+    color: aliceblue;
+    text-overflow: ellipsis;
+}
